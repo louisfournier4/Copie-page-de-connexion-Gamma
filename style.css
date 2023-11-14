@@ -1,0 +1,241 @@
+/* color */
+:root {
+    --violet: ;
+}
+
+/*  */
+
+
+@font-face {
+    font-family: 'Mackinac'; /* Donnez un nom à votre police */
+    src: url('font/P22Mackinac-Medium_6.otf') format('opentype'); /* Spécifiez le chemin vers votre fichier OTF */
+    font-weight: normal; /* Poids de la police (normal, bold, etc.) */
+    font-style: normal; /* Style de la police (normal, italic, etc.) */
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    
+    height: 100%;
+}
+
+body .background-image {
+    width: 100%;
+    height: 100vh; 
+    background-image: url('media/fond.jpg');
+    background-size: cover; 
+    background-position: bottom; 
+    background-repeat: no-repeat; 
+    object-fit: cover; 
+}
+
+ .colonne-gauche {
+    display: block;
+    background-color: white;
+    
+    width: 21%;
+    padding: 70px;
+   
+
+}
+
+.background-image #logo {
+    width: 100px;
+}
+
+.background-image h2 {
+    font-size: 36px;
+    font-family: "Mackinac";
+    background-image: linear-gradient(50deg, rgb(43, 10, 255), rgb(255, 91, 138) 49%, rgb(255, 91, 138) 53%, rgb(255, 91, 138) 55%, rgb(251, 166, 75) 77%, rgb(249, 155, 82));
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    line-height: 120px;
+   
+
+}
+
+
+
+.custom-button {
+   
+    text-align: center;
+    text-decoration: none;
+    color: #fff; 
+
+    background: linear-gradient(90deg, rgba(70,13,255,1) 0%, rgba(111,23,204,1) 100%);
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  
+
+ 
+}
+
+.custom-button:hover {
+   
+  
+background: linear-gradient(90deg, rgba(70,13,255,1) 0%, rgba(194,47,232,1) 100%);
+
+
+}
+
+.connexion-google {
+    display: flex;
+    
+    
+    
+
+}
+.connexion-google a {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    
+   
+}
+
+.connexion-google svg{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    
+
+}
+
+.separateur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 80px;
+    position: relative;
+}
+
+.separateur::before,
+.separateur::after {
+    content: '';
+    flex: 1;
+    height: 1px; 
+    background-color: lightgray;
+    margin: 0 10px; 
+}
+
+.separateur span {
+    padding: 0 10px; 
+    font-family: "Inter";
+    color: rgb(133, 130, 130);
+}
+
+.zone-text-form {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+
+.zone-text-form button {
+    padding: 10px;
+    border: 1px solid rgb(194, 191, 191);
+    border-radius: 5px;
+    background: white;
+    font-family: "inter";
+    font-size: 17px;
+    
+}
+
+.zone-text-form button:hover {
+    background: linear-gradient(90deg, rgba(70,13,255,1) 0%, rgba(194,47,232,1) 100%);
+    color: white;
+    border: none;
+}
+
+form label {
+    font-family: "inter";
+    color: black;
+    font-weight: 200;
+    
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid rgb(194, 191, 191);
+    border-radius: 5px;
+}
+
+#mdp-forget a {
+    text-decoration: none;
+    font-family: "inter";
+    line-height: 65px;
+    color: #2b4cff;
+}
+
+#without-user a{
+    text-decoration: none;
+    color: #2b4cff;
+    
+  
+
+}
+
+#without-user p{
+    font-family: "inter";
+    font-size: 15px;
+    font-weight: 200;
+    
+}
+
+#without-user {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+
+#logo-gris {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+#logo-gris svg{
+    width: 50px;
+    height: 50px;
+    
+}
+#logo-gris p {
+    line-height: 70px;
+    font-family: "inter";
+    font-size: 13px;
+    color: rgb(194, 191, 191);
+}
+
+#gros-logo {
+    width: 40%;
+    height: 100%;
+    margin-left: 817px;
+    position: absolute;
+    
+  
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
